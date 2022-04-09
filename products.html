@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- FONT AWESOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- CUSTOMIZED CSS  -->
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+
+<body>
+    <div class="home">
+
+        <div class="header">
+            <div class="logo">
+                <p>KCFonline Shop</p>
+
+            </div>
+
+            <div class="wrapper">
+                <input type="text" id="search" placeholder=" search product......">
+                <input type="submit" value="search" class="btn-submit">
+            </div>
+            <div class="link-wrapper">
+                <a href="signup.html" class="btn-round login-btn"><i class="fa fa-user-circle"
+                        aria-hidden="true"></i>Sign up</a>
+                <a href="login.html" class="btn-round login-btn"><i class="fa fa-user-circle" aria-hidden="true"></i>Log
+                    in</a>
+                <a href="cart.html" class="btn-round cart"><i class="fa fa-shopping-cart"
+                        aria-hidden="true"></i><span>12</span>
+                    Cart</a>
+            </div>
+
+
+        </div>
+        <div class="navbar">
+            <ul class="nav-links">
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="#">About us</a></li>
+                <li class="links"><a href="products.html">Shop</a></li>
+                <li class="links"><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+            <div class="row row-2">
+                <h1 class="col"><a><i class="fa-solid fa-shop"></i>All Products</a></h1>
+                
+            </div>
+        </div><hr>
+
+        <!--Products--->
+        <section class="Products">
+            
+
+            
+                <div class="box-container">
+                    <div class="card" id="product1">  
+                        <div class="title">Smartphone</div>
+                        <img src="images/products/1.png" alt="image of phone"> 
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(50 reviews)</span>
+                        </div>
+                        <div class="Price">1,600,000 UGX</div>
+                        <button class="Add-to-cart" onclick="addToCart(product1)">Add to cart</button>
+                    </div>
+
+                    <div class="card" id="product2">
+                        <div class="title">Smartphone</div>
+                        <img src="images/products/2.png" alt="image of phone"> 
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(100 reviews)</span>
+                        </div>
+                        <div class="Price">600,000 UGX</div>
+                        <button class="Add-to-cart" onclick="addToCart(product2)">Add to cart</button>
+                    </div>
+
+                    <div class="card" id="product3">
+                        <div class="title">Smartphone</div>
+                        <img src="images/products/3.png" alt="image of phone"> 
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(20 reviews)</span>
+                        </div>
+                        <div class="Price">800,000 UGX</div>
+                        <button class="Add-to-cart" onclick="addToCart(product3)">Add to cart</button>
+                    </div>
+
+                    <div class="card" id="product4">
+                        <div class="title">Smartphone</div>
+                        <img src="images/products/4.png" alt="image of phone"> 
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(50 reviews)</span>
+                        </div>
+                        <div class="Price">1,700,000 UGX</div>
+                        <button class="Add-to-cart" onclick="addToCart(product4)">Add to cart</button>
+                    </div>
+
+                    <div class="card" id="product5">
+                        <div class="title">Smartphone</div>
+                        <img src="images/products/5.png" alt="image of phone"> 
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(10 reviews)</span>
+                        </div>
+                        <div class="Price">600,000 UGX</div>
+                        <button class="Add-to-cart" onclick="addToCart(product5)">Add to cart</button>
+                    </div>
+
+                    <div class="card" id="product6">
+                        <div class="title">Smartphone</div>
+                        <img src="images/products/6.png" alt="image of phone"> 
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(20 reviews)</span>
+                        </div>
+                        <div class="Price">900,000 UGX</div>
+                        <button class="Add-to-cart" onclick="addToCart(product6)">Add to cart</button>
+                    </div>
+
+                    <div class="card" id="product7">
+                        <div class="title">Smartphone</div>
+                        <img src="images/products/8.png" alt="image of phone"> 
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(10 reviews)</span>
+                        </div>
+                        <div class="Price">2,000,000 UGX</div>
+                        <button class="Add-to-cart" onclick="addToCart(product7)">Add to cart</button>
+                    </div>
+
+                    <div class="card" id="product8">
+                        <div class="title">Smartphone</div>
+                        <img src="images/products/10.png" alt="image of phone"> 
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(25 reviews)</span>
+                        </div>
+                        <div class="Price">1,000,000 UGX</div>
+                        <button class="Add-to-cart" onclick="addToCart(product8)">Add to cart</button>
+                    </div>
+
+                    <div class="card" id="product9">
+                        <div class="title">Smartphone</div>
+                        <img src="images/products/11.png" alt="image of phone"> 
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(60 reviews)</span>
+                        </div>
+                        <div class="Price">500,000 UGX</div>
+                        <button class="Add-to-cart" onclick="addToCart(product9)">Add to cart</button>
+                    </div>
+
+                    
+                </div>
+
+                <!-- Product section end -->
+        </section>
+
+
+    <script type="text/JavaScript" src="cart.js"></script>
+</body>
