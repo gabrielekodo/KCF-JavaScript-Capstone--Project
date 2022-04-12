@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product page</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- FONT AWESOME CDN LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -22,7 +20,7 @@
         rel="stylesheet">
     <!-- CUSTOMIZED CSS  -->
     <link rel="stylesheet" href="/css/products.css">
-    <link rel="stylesheet" href="/css/cart.css">
+    <!-- <link rel="stylesheet" href="/css/cart.css"> -->
 </head>
 
 <body>
@@ -62,160 +60,31 @@
 
 
 
-        <div class="container">
-            <div class="row row-2">
-                <h1 class="col"><a><i class="fa-solid fa-shop"></i>All Products</a></h1>
-                
-            </div>
-        </div><hr>
+    <div class="container">
+        <div class="row row-2">
+            <h1 class="col"><a><i class="fa-solid fa-shop"></i>All Products</a></h1>
 
-        <!--Products--->
-        <section class="Products">
-            
+        </div>
+    </div>
+    <hr>
 
-            
-                <div class="box-container">
-                    <div class="card" id="product1">  
-                        <div class="title">Smartphone</div>
-                        <img src="images/products/1.png" alt="image of phone"> 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(50 reviews)</span>
-                        </div>
-                        <div class="Price">1,600,000 UGX</div>
-                        <button class="Add-to-cart" onclick="addToCart(product1)">Add to cart</button>
-                    </div>
-
-                    <div class="card" id="product2">
-                        <div class="title">Smartphone</div>
-                        <img src="images/products/2.png" alt="image of phone"> 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(100 reviews)</span>
-                        </div>
-                        <div class="Price">600,000 UGX</div>
-                        <button class="Add-to-cart" onclick="addToCart(product2)">Add to cart</button>
-                    </div>
-
-                    <div class="card" id="product3">
-                        <div class="title">Smartphone</div>
-                        <img src="images/products/3.png" alt="image of phone"> 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(20 reviews)</span>
-                        </div>
-                        <div class="Price">800,000 UGX</div>
-                        <button class="Add-to-cart" onclick="addToCart(product3)">Add to cart</button>
-                    </div>
-
-                    <div class="card" id="product4">
-                        <div class="title">Smartphone</div>
-                        <img src="images/products/4.png" alt="image of phone"> 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(50 reviews)</span>
-                        </div>
-                        <div class="Price">1,700,000 UGX</div>
-                        <button class="Add-to-cart" onclick="addToCart(product4)">Add to cart</button>
-                    </div>
-
-                    <div class="card" id="product5">
-                        <div class="title">Smartphone</div>
-                        <img src="images/products/5.png" alt="image of phone"> 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(10 reviews)</span>
-                        </div>
-                        <div class="Price">600,000 UGX</div>
-                        <button class="Add-to-cart" onclick="addToCart(product5)">Add to cart</button>
-                    </div>
-
-                    <div class="card" id="product6">
-                        <div class="title">Smartphone</div>
-                        <img src="images/products/6.png" alt="image of phone"> 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(20 reviews)</span>
-                        </div>
-                        <div class="Price">900,000 UGX</div>
-                        <button class="Add-to-cart" onclick="addToCart(product6)">Add to cart</button>
-                    </div>
-
-                    <div class="card" id="product7">
-                        <div class="title">Smartphone</div>
-                        <img src="images/products/8.png" alt="image of phone"> 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(10 reviews)</span>
-                        </div>
-                        <div class="Price">2,000,000 UGX</div>
-                        <button class="Add-to-cart" onclick="addToCart(product7)">Add to cart</button>
-                    </div>
-
-                    <div class="card" id="product8">
-                        <div class="title">Smartphone</div>
-                        <img src="images/products/10.png" alt="image of phone"> 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(25 reviews)</span>
-                        </div>
-                        <div class="Price">1,000,000 UGX</div>
-                        <button class="Add-to-cart" onclick="addToCart(product8)">Add to cart</button>
-                    </div>
-
-                    <div class="card" id="product9">
-                        <div class="title">Smartphone</div>
-                        <img src="images/products/11.png" alt="image of phone"> 
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(60 reviews)</span>
-                        </div>
-                        <div class="Price">500,000 UGX</div>
-                        <button class="Add-to-cart" onclick="addToCart(product9)">Add to cart</button>
-                    </div>
-
-                    
-                </div>
-
-                <!-- Product section end -->
-        </section>
+    <!--Products--->
+    <section class="Products">
 
 
-    <script type="text/JavaScript" src="cart.js"></script>
+
+        <div class="box-container">
+
+
+
+
+        </div>
+
+        <!-- Product section end -->
+    </section>
+
+
+    <script type="text/JavaScript" src="/javascript/products.js"></script>
+    <!-- <script type="text/JavaScript" src="/javascript/cart.js"></script> -->
+    <script src="/javascript/login.js"></script>
 </body>

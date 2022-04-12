@@ -30,7 +30,7 @@ i {
 /* HOME PAGE */
 .home {
   width: 95vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0 auto;
 }
 .logo {
@@ -128,10 +128,10 @@ input[type="submit"] {
 }
 
 /* SIGN UP PAGE */
-.container {
+/* .container {
   width: 67%;
   margin: 30px auto;
-}
+} */
 .form-control {
   display: flex;
   flex-direction: column;
@@ -156,5 +156,3 @@ form button:hover {
   background-color: var(--color-dark);
   color: var(--color-light);
 }
-
-
