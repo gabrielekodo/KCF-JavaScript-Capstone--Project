@@ -1,4 +1,4 @@
-const products = document.querySelector(".box-container");
+const container = document.querySelector(".Products");
 
 const productInventory = [
   {
@@ -115,47 +115,33 @@ const productInventory = [
     price: 1500000,
   },
 ];
-
-if (localStorage.getItem("user") === null) {
-  products.innerHTML = `
-  <div class="not-logged">
-  <h1>Please log in first!!!</h1>
-  <a href="login.html">Login</a> /<a href="signup.html">Create new account</a> </div>`;
-} else {
-  productInventory.forEach((product) => {
-    products.innerHTML += `
-<div class="card" id="${product.id}" data-id="${product.id}">
-                <div class="title">${product.name}</div>
-                <img src="${product.img}" alt="${product.name}">
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span>(60 reviews)</span>
-                </div>
-                <div class="Price">UGX ${product.price}</div>
-                
-        
-                <button class="details Add-to-cart">See Details</button>
-            </div>
-`;
-  });
-}
-
-products.addEventListener("click", (e) => {
-  if (e.target.classList.contains("details")) {
-    console.log("yes");
-    const elementId = Number(e.target.parentElement.dataset.id);
-    console.log(elementId);
-
-    const productToDisplay = productInventory.find(
-      (item) => item.id === elementId
+const addToCart = (e) => {
+  let cart;
+  if (e.target.classList.contains("orderProduct")) {
+    const id = Number(
+      e.target.parentElement.parentElement.parentElement.dataset.id
     );
-    console.log(productToDisplay);
-    window.location.href = "/productDetails.html";
-    // store product in Local storage
-    localStorage.setItem("details", JSON.stringify(productToDisplay));
+    const product = productInventory.find((item) => item.id === id);
+    console.log(product);
+    // store cart in local storage
+    if (localStorage.getItem("cart") === null) {
+      cart = [];
+    } else {
+      cart = JSON.parse(localStorage.getItem("cart"));
+    }
+    const quantity = Number(e.target.previousElementSibling.value);
+
+    if (quantity !== 0 && quantity !== "") {
+      product.quantity = quantity;
+      product.bill = product.price * product.quantity;
+      cart.push(product);
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+    // redirect to cart page
+    window.location.href = "/cart.html";
   }
-});
+};
+
+container.addEventListener("click", addToCart);
